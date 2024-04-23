@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade5-BD3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1>Cadastro de Aluno!</h1>
+
+    <div class="content">
+
+        <form class="form" id="aluno-form">
+
+            <input name="nome" id="nome" type="text" placeholder="nome"/>
+            <input name="cpf" id="cpf" type="text" placeholder="nome"/>
+            <input name="rg" id="rg" type="text" placeholder="nome"/>
+            <input name="tel-aluno" id="telAluno" type="text" placeholder="nome"/>
+            <input name="tel-responsavel" id="telResponsavel" type="text" placeholder="nome"/>
+            <input name="email" id="email" type="text" placeholder="nome"/>
+            <input name="dt-nascimento" id="dtNascimento" type="text" placeholder="nome"/>
+            <button type="submit">Cadastrar!</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"/>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js"/>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBbo63N0TPIgjXWeum9yDFipai6O0K7cB4",
+            authDomain: "bd3-nosql.firebaseapp.com",
+            projectId: "bd3-nosql",
+            storageBucket: "bd3-nosql.appspot.com",
+            messagingSenderId: "988461011199",
+            appId: "1:988461011199:web:f08cb148f2586f68497cca",
+            measurementId: "G-HDKD9H201B"
+        };
+
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    
+    <script src="app.js"/>
+</html>
